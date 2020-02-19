@@ -1,0 +1,7 @@
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: installing tomcat7 via apt
+    apt: 
+     name: tomcat7
+     state: present
